@@ -6,4 +6,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(todosRoutes);
-app.listen(3000);
+app.listen(4000,()=>{
+    console.log('server listening on port 4000');
+});
